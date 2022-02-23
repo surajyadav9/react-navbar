@@ -1,9 +1,15 @@
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Navbar from './Navbar';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello world</h1>
+    <div>
+      <Router>
+        <Navbar />
+        {/* <Body />
+        <Footer /> */}
+      </Router>
     </div>
   );
 }
