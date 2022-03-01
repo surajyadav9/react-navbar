@@ -3,9 +3,9 @@ import Navtabs from "./Navtabs";
 function Navbar() {
     return (
         <ul className="nav">
-            <Navtabs tabName="Home" />
-            <Navtabs tabName="Mutual Funds" />
-            <Navtabs tabName="Stocks" />
+            <Navtabs tabName="Home" destination="/" />
+            <Navtabs tabName="Mutual Funds" destination="/mutualfund" />
+            <Navtabs tabName="Stocks" destination="/stocks" />
         </ul>
     );
 }

@@ -1,5 +1,8 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './Navbar';
+import Home from './Home';
+import MutualFund from './MutualFund';
+import Stocks from './Stocks';
 import './App.css';
 
 function App() {
@@ -7,8 +10,11 @@ function App() {
     <div>
       <Router>
         <Navbar />
-        {/* <Body />
-        <Footer /> */}
+        <Switch>
+          <Route path="/" exact render={(props) => <Home {...props} />} />
+          <Route path="/mutualfund" render={(props) => <MutualFund {...props} />}/>
+          <Route path="/stocks" render={(props) => <Stocks {...props} />}/>
+        </Switch>
       </Router>
     </div>
   );
